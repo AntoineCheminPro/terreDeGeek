@@ -8,16 +8,28 @@ header {
     height: 100px;
     background-color:  #0D3B66;
     display: flex;
+    border-radius: 3%;
+
 }
 .logo {
     max-width: 35%;
     height: auto;
 }
 H1 {
-
+    height: auto;
     background-color:  #0D3B66;
     font:#FFFFCC ;
     width: 65%;
     align-self: center;
-    font-size: 55px;
+    font-size: 58px;
+}
+nav {
+    height: 30px;
+    background-color: #0D3B66;
+    display: flex;
+}
+.navBtn {
+    width: 35%;
+    background-color:  #0D3B66;
+    border-radius: 3%;
 }
