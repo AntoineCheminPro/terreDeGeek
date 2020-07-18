@@ -12,14 +12,14 @@ header {
 
 }
 .logo {
-    max-width: 35%;
+    max-width: 33%;
     height: auto;
 }
 H1 {
     height: auto;
     background-color:  #0D3B66;
     font:#FFFFCC ;
-    width: 65%;
+    width: 66%;
     align-self: center;
     font-size: 58px;
 }
@@ -32,4 +32,19 @@ nav {
     width: 35%;
     background-color:  #0D3B66;
     border-radius: 3%;
+}
+main {
+    height: 460px;
+    background-color:  #FFFFCC;
+}
+h6 {
+    background-color:  #0D3B66;
+}
+.pFooter
+{
+    background-color:  #0D3B66;
+
+}
+footer {
+    height: 75px;
 }
