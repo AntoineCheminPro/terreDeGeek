@@ -3,6 +3,7 @@
     font-family: 'Yanone Kaffeesatz', sans-serif;
     background-color:  #0D3B66;
     border-radius: 1%;
+    color: #FFFFCC;
 
 }
 header {
@@ -25,13 +26,14 @@ H1 {
 nav {
     height: 30px;
     display: flex;
+    align-items: stretch;
 }
 .navBtn {
-    width: 33%;
+   width: 33%;
+    font-size: larger;
     border-radius: 3%;
 }
 main {
-    height: 600px;
     background-color:  #FFFFCC;
 }
 div {
@@ -39,22 +41,45 @@ div {
     display: flex;
     flex-flow:wrap column;
     height: 200px;
-
+    color: black;
+    flex-wrap: wrap;
+}
+figure{
+    background-color: #FFFFCC;
+}
+a{
+    background-color: #FFFFCC;
+    color: black;
 }
 div>p {
     background-color:  #FFFFCC;
     width: 45%;
+    align-self: center;
+    color: black;
+    align-self: stretch;
+
 }
 .photo {
     margin :10px;
-    width: 45%;
-    height: 180px;
+    width: 35%;
+    height: auto;
 }
 h2 {
+    margin:10px;
     background-color:  #FFFFCC;
+    color: black;
+
 }
 h3{
+    margin:10px;
     background-color:  #FFFFCC;
+    color: black;
+
+}
+h4 {
+    background-color:  #FFFFCC;
+    color: black;
+    justify-self: baseline;
 }
 h6 {
     font-size: large;
