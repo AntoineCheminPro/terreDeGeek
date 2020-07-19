@@ -1,16 +1,20 @@
 * {
     margin: 0;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    background-color:  #0D3B66;
     border-radius: 1%;
     color: #FFFFCC;
-
+}
+article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #FFFFCC;
 }
 header {
     height: 100px;
     display: flex;
     border-radius: 3%;
-
+    background-color:  #0D3B66;
 }
 .logo {
     max-width: 33%;
@@ -24,9 +28,11 @@ H1 {
     font-size: 58px;
 }
 nav {
-    height: 30px;
+    height: auto;
     display: flex;
     align-items: stretch;
+    background-color:  #0D3B66;
+
 }
 .navBtn {
    width: 33%;
@@ -36,41 +42,27 @@ nav {
 main {
     background-color:  #FFFFCC;
 }
-div {
-    background-color:  #FFFFCC;
-    display: flex;
-    flex-flow:wrap column;
-    height: 200px;
-    color: black;
-    flex-wrap: wrap;
-}
-figure{
-    background-color: #FFFFCC;
-}
 a{
-    background-color: #FFFFCC;
     color: black;
 }
-div>p {
+div {
+    width: 50%;
     background-color:  #FFFFCC;
-    width: 45%;
-    align-self: center;
     color: black;
-    align-self: stretch;
 
 }
+p {
+    color: black;
+}
 .photo {
-    margin :10px;
-    width: 35%;
-    height: auto;
+width : 175px;
 }
 h2 {
     margin:10px;
     background-color:  #FFFFCC;
     color: black;
-
 }
-h3{
+h3  {
     margin:10px;
     background-color:  #FFFFCC;
     color: black;
@@ -87,5 +79,5 @@ h6 {
 
 footer {
     background-color:  #0D3B66;
-    height: 75px;
+    color: #FFFFCC;
 }
