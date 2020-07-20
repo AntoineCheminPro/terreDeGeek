@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    border-radius: 1%;
+    color: #FFFFCC;
+}
+article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #FFFFCC;
+}
+header {
+    height: 100px;
+    display: flex;
+    border-radius: 3%;
+    background-color:  #0D3B66;
+}
+.logo {
+    max-width: 33%;
+    height: auto;
+}
+H1 {
+    height: auto;
+    font:#FFFFCC ;
+    width: 66%;
+    align-self: center;
+    font-size: 58px;
+}
+nav {
+    height: auto;
+    display: flex;
+    align-items: stretch;
+    background-color:  #0D3B66;
+
+}
+.navBtn {
+   width: 33%;
+    font-size: larger;
+    border-radius: 3%;
+}
+main {
+    background-color:  #FFFFCC;
+}
+a{
+    color: black;
+}
+div {
+    width: 50%;
+    background-color:  #FFFFCC;
+    color: black;
+
+}
+p {
+    color: black;
+}
+.photo {
+width : 175px;
+}
+h2 {
+    margin:10px;
+    background-color:  #FFFFCC;
+    color: black;
+}
+h3  {
+    margin:10px;
+    background-color:  #FFFFCC;
+    color: black;
+
+}
+h4 {
+    background-color:  #FFFFCC;
+    color: black;
+    justify-self: baseline;
+}
+h6 {
+    font-size: large;
+}
+
+footer {
+    background-color:  #0D3B66;
+    color: #FFFFCC;
+}
