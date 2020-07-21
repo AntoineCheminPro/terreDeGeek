@@ -62,8 +62,10 @@ div {
 p {
     color: black;
 }
+
 .photo {
 width : 175px;
+height: auto;
 }
 h2, h3, h4 {
     margin:10px;
@@ -82,3 +84,15 @@ footer {
     background-color:  #0D3B66;
     color: #FFFFCC;
 }
+section {
+    height: 300px;
+    margin : 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section>div {
+    height: 250px;
+    margin : 10px;
+}
+
