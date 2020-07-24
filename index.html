@@ -1,47 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terre de GEEK</title>
+  <meta charset="utf-8">
+  <title>Terre de GEEK</title>
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/main.css">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
 </head>
-
 <body>
-
-    <header >
-     <img class="logo" src="img/88478248-logo-geek-modèle-de-logo-vectoriel-logo-geek-modèle-de-logo-vectoriel.jpg" alt="logo terre de GEEk">
-     <h1>Terre de GEEK</h1>
+     <header class="flex">
+       <div class="flex fullCenter">
+          <picture class="flex">
+            <img class="logo" src="img/88478248-logo-geek-modèle-de-logo-vectoriel-logo-geek-modèle-de-logo-vectoriel.jpg" alt="logo terre de GEEk">
+         </picture>
+         <h1 class="flex fullCenter">
+            Terre de GEEK
+         </h1>
+      </div>
     </header>
  
     <!-- Navigation -->
-    <nav class="mainBG">
-       <ul>
+    <nav class="mainBG flex">
+       <ul class="flex">
           <li>
-             <a  href="index.html">acceuil</a>
+            <a  href="index.html">acceuil</a>
           </li>
           <li>
-             <a  href="productTDG.html">nos produits</a>
+             <a  href="productTDG.html">produits</a>
           </li>
           <li>
+            <a  href="prestaTDG.html">prestations</a>
+         </li>
+         <li>
              <a  href="whoAreWeTDG.html">qui sommes nous?</a>
           </li>
+         <li>
+            <a  href="contactTDG.html">contact</a>
+         </li>
        </ul>
      </nav>
- 
-     <!-- Main -->
-     <main class="secondBG">
-        <section>
-            <article>
-                <div>
+
+     
+    <!-- Main -->
+    <main class="secondBG flex column fullCenter">
+        <section class="flex column fullCenter">
+           <article>
+                <div class="flex fullCenter column">
                     <a href="productTDG.html">
                     <picture>
-                            <img src="img/pcFixe.png" alt="image ordinateur fixe">
+                            <img class="photo" src="img/pcFixe.png" alt="image ordinateur fixe">
                     </picture>
                     </a> 
                 </div>
-                <div>
+                <div class=" flex fullCenter column">
                     <h2 >PC fixe</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, atque, veritatis magnam perferendis, natus eveniet quis repudiandae tempore autem nam numquam placeat tenetur ducimus. Adipisci, labore! Molestias nisi aspernatur maiores!
@@ -51,12 +72,12 @@
             </article>
 
             <article>
-                <div>
+                <div class="flex fullCenter column">
                     <picture>
-                        <img src="img/pcPortable.png" alt="image ordinateur portable">
+                        <img  class="photo" src="img/pcPortable.png" alt="image ordinateur portable">
                     </picture>
                 </div>
-                <div>    
+                <div class="flex fullCenter column">    
                     <h2>PC portable</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, atque, veritatis magnam perferendis, natus eveniet quis repudiandae tempore autem nam numquam placeat tenetur ducimus. Adipisci, labore! Molestias nisi aspernatur maiores!
@@ -66,12 +87,12 @@
             </article>
 
             <article>
-                <div>
+                <div class="flex fullCenter column">
                     <picture>
-                        <img src="img/pcAccessoires.png" alt="image ordinateur fixe">
+                        <img  class="photo" src="img/pcAccessoires.png" alt="image ordinateur fixe">
                     </picture>
                 </div>
-                <div>
+                <div class="flex fullCenter column">
                 <h2>Accessoires</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, atque, veritatis magnam perferendis, natus eveniet quis repudiandae tempore autem nam numquam placeat tenetur ducimus. Adipisci, labore! Molestias nisi aspernatur maiores!
@@ -81,14 +102,15 @@
             </article>
 
         </section>
-
     </main>
 
+
     <footer class="mainBG">
-        <div>
-           <h6>mentions légales</h6>
-           <p class="pFooter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus maxime facilis illum cupiditate! Et animi odit quam maxime nobis, alias distinctio repudiandae eaque sed expedita consequuntur, voluptas architecto eligendi!</p>
-        </div>   
-  </footer>
+       <div class="flex fullCenter column">
+          <h6>mentions légales</h6>
+          <p class="pFooter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus maxime facilis illum cupiditate! Et animi odit quam maxime nobis, alias distinctio repudiandae eaque sed expedita consequuntur, voluptas architecto eligendi!</p>
+       </div>
+ </footer>
+
  </body>
  </html>

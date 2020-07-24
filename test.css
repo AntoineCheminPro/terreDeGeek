@@ -1,11 +1,3 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -86,210 +78,176 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-     * {
-      font-family: 'Yanone Kaffeesatz', sans-serif;
+  
+     /* genereal rules */
+  * {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+  
+  .mainBG {
+    background-color:  #0D3B66;
+    color: #FFFFCC;
+  }
+  
+  .secondBG {
+    background-color:  #FFFFCC;
+    color: #0D3B66;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  .fullCenter {
+    align-items: center;
+    justify-content: center;
+  }
+  .column {
+    flex-direction: column;
+  }
+  
+  header {
+    margin: auto;
+    height: 15vh;
+  }
+  
+  nav {
+    margin: 5px;
+    height: 15vh;
+  }
+  
+  body {
+    margin: 5px 5px;
+    height: 100%;
+  }
+  
+  main {
+    min-height: 80vh;
+    height: 90%;
+  }
+  
+  section {
+    margin : 10px;
+    margin-bottom: 50px;
+  
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #FFFFCC;
+  }
+  
+  p {
+    font-size: 1em;
+  }
+  
+  footer div {
+    margin: 5px;
+    font-size: 0.5em;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1em;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  li {
+    margin-left: 8px;
+  
+  }
+  
+  h2, h3, h4 {
+    margin:10px;
+    font-size: 2em;
+    color: #0D3B66;
+  }
+  
+  h1 {
+    margin :10px;
+    height: auto;
+    width: 66%;
+    font-size: 3em;
+  }
+  
+  h4 {
+  font-size: 2em;
+  }
+  
+  h6 {
+    font-size: large;
+  }
+  
+  picture {
+    display: flex;
+    justify-content: center;
+    width : 30vw;
+    height: auto;
     }
     
-    .mainBG {
-      background-color:  #0D3B66;
-      color: #FFFFCC;
-    }
-    
-    .secondBG {
-      background-color:  #FFFFCC;
-      color: #0D3B66;
-    }
-    
-    .flex {
-      display: flex;
-    }
-    .fullCenter {
-      align-items: center;
-      justify-content: center;
-    }
-    .column {
-      flex-direction: column;
-    }
-    
-    header {
-      margin: auto;
-      height: 15vh;
-    }
-    
-    nav {
-      margin: 5px;
-      height: 15vh;
-    }
-    
-    body {
-      margin: 5px 5px;
-      height: 100%;
-    }
-    
-    main {
-      min-height: 80vh;
-      /* height: 90%; */
-    }
-    
-    section {
-      margin : 10px;
-      margin-bottom: 50px;
-    }
-    article {
-      border : #0D3B66 1px solid;
-      border-radius: 5px;
-      margin: 5px;
-      padding: 10px;
-    }
-    
-    a {
-      text-decoration: none;
-      font-size: 1em;
-      color: #FFFFCC;
-    }
-    
-    p {
-      font-size: 1em;
-    }
-    
-    footer div {
-      margin: 5px;
-      font-size: 0.5em;
-    }
-    
-    nav ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      font-size: 1em;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-    }
-    
-    li {
-      margin-left: 8px;
-    
-    }
-    
-    h2, h3, h4 {
-      margin:10px;
-      font-size: 2em;
-      color: #0D3B66;
-    }
-    
+  picture img {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  @media screen and (min-width: 576px){
     h1 {
-      margin :10px;
-      height: auto;
-      width: 66%;
+      font-size: 5em;
+      
+    }
+    nav ul {
+      font-size: 2em;
+    }
+  
+    
+  }
+  @media screen and (min-width: 768px){
+    h1 {
+      font-size: 6em;
+    }
+    nav ul {
+      font-size: 2.5em;
+    }
+  }
+  @media screen and (min-width: 992px){
+    h1 {
+      font-size: 10em;
+    }
+    nav ul {
       font-size: 3em;
     }
-    
-    h4 {
-    font-size: 2em;
-    }
-    
-    h6 {
-      font-size: large;
-    }
-    
-    picture {
-      display: flex;
-      justify-content: center;
-      width : 30vw;
-      height: auto;
-      }
-      
-    picture img {
-      width: 100%;
-      max-width: 250px;
-    }
-    
-    @media screen and (min-width: 576px){
-      h1 {
-        font-size: 5em;
-        
-      }
-      nav ul {
-        font-size: 2em;
-      }
-    
-      
-    }
-    @media screen and (min-width: 768px){
-      h1 {
-        font-size: 6em;
-      }
-      nav ul {
-        font-size: 2.5em;
-      }
-    }
-    @media screen and (min-width: 992px){
-      h1 {
-        font-size: 8em;
-      }
-      nav ul {
-        font-size: 3em;
-      }
-    }
-    @media screen and (min-width: 1200px){
-      h1 {
-        font-size: 10em;
-      }
-      nav ul {
-        font-size: 3.5em;
-      }
-    }
-    /* utility classes */
-    
-    .logo {
-      max-width: 33%;
-      height: auto;
-    }
-    
-    .photo {
-      width: 50vh;
-      height: auto;
-      border : #0D3B66 1px solid;
-      border-radius: 5px;
-      margin: 5px;
-    }
-    /* specific classes */
-    .formGroup{
-      margin : 15px;
-    }
-    .photoCentrale {
-      width: 100%;
-    }
-    table /* Toutes les cellules des tableaux... */
-    {
-        border: 1px solid #0D3B66;
-        border-collapse: collapse;
-        margin: 0;
-        padding: 0;
-        height: 50vh;
-        width: 50vw;
-    }
-    caption{
-      font-size: 2em;
-    }
-
-  th{
-  font-size: 1em;
   }
-    td {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        font-size: 1em;
-      }
-    iframe {
-      display: block;       
-      height: 26vh;        
-      width: 30vh;
-      border: black solid 2px;
-      border-radius: 2vh;
+  @media screen and (min-width: 1200px){
+    h1 {
+      font-size: 12em;
     }
+    nav ul {
+      font-size: 3.5em;
+    }
+  }
+  /* utility classes */
+  
+  .logo {
+    max-width: 33%;
+    height: auto;
+  }
+  
+  .photo {
+    width: 50vh;
+    height: auto;
+  }
+  /* specific classes */
+  
+  .photoCentrale {
+    width: 100%;
+    display: flex;
+    align-items:  center;
+  }
+  
   /* ==========================================================================
      Helper classes
      ========================================================================== */
