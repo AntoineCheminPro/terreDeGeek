@@ -1,17 +1,4 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-   html {
+  html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
@@ -89,100 +76,156 @@
      * {
       font-family: 'Yanone Kaffeesatz', sans-serif;
     }
-    
+
     .mainBG {
       background-color:  #0D3B66;
-      color: #FFFFCC;
+      color: white;
     }
     
     .secondBG {
-      background-color:  #FFFFCC;
       color: #0D3B66;
+    }
+
+    .thirdBG {
+      background-color:#FAA916;
     }
     
     .flex {
       display: flex;
     }
+
     .fullCenter {
       align-items: center;
       justify-content: center;
     }
+
     .column {
       flex-direction: column;
     }
+
+    .icone {
+      height: 20px;
+      width: auto;
+      margin:0 15px 0 15px;
+    }
+
+    body {
+      background-color:#FAA916;
+      margin: 5px;
+      height: 100%;
+      padding: 10px;
+    }
     
     header {
+      background-color:#FAA916;
       margin: auto;
       height: 15vh;
     }
     
-    nav {
+    header nav {
+      padding: 0 20px 0 20px;
       margin: 5px;
-      height: 15vh;
-    }
-    
-    body {
-      margin: 5px 5px;
-      height: 100%;
+      height: 13vh;
     }
     
     main {
       min-height: 80vh;
-      /* height: 90%; */
     }
     
     section {
       margin : 10px;
       margin-bottom: 50px;
+      width: 75vw;
     }
+
     article {
-      border : #0D3B66 1px solid;
+      background-color: white;
+      width: 100%;
       border-radius: 5px;
       margin: 5px;
       padding: 10px;
+      height: 100%;
+    }
+
+    div {
+      width: 100%;
+      height: auto;
     }
     
     a {
       text-decoration: none;
-      font-size: 1em;
-      color: #FFFFCC;
+      color: white;
+      margin-right: 5px;
+    }
+
+    body>nav a:hover {
+      background-color: #FAA916;
+      color: #0D3B66;
+      padding: 10px 50px 10px 50px;
+      border: #0D3B66 solid 3px;
+      border-radius: 10px;
+      transition: 0.5s;
     }
     
     p {
+      font-size: 1.5em;
+    }
+
+    table {
+      border: 1px solid #0D3B66;
+      border-collapse: collapse;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
       font-size: 1em;
     }
-    
+
+    caption{
+      font-size: 2em;
+    }
+
+    th{
+    font-size: 1em;
+    }
+
+    td {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-size: 1em;
+    }
+
     footer div {
       margin: 5px;
-      font-size: 0.5em;
+      font-size: 1em;
     }
-    
+
     nav ul {
       margin: 0;
       padding: 0;
       list-style-type: none;
-      font-size: 1em;
+      font-size: 0.80em;
       justify-content: space-between;
       align-items: center;
       width: 100%;
+      height: auto;
     }
     
     li {
       margin-left: 8px;
-    
     }
     
     h2, h3, h4 {
-      margin:10px;
+      margin: 10px;
       font-size: 2em;
-      color: #0D3B66;
     }
     
     h1 {
       margin :10px;
       height: auto;
       width: 66%;
-      font-size: 3em;
+      font-size: 2.5em;
     }
     
     h4 {
@@ -191,98 +234,134 @@
     
     h6 {
       font-size: large;
+      margin: 0;
     }
     
     picture {
       display: flex;
       justify-content: center;
-      width : 30vw;
-      height: auto;
-      }
-      
-    picture img {
-      width: 100%;
-      max-width: 250px;
     }
-    
+
+    footer p{
+      font-size: 1em;
+    } 
+
+    .verticalalign{
+      vertical-align: top;
+    }
+    @media screen and (min-width: 376px){
+      nav ul {
+        font-size: 1.2em;
+      }
+      .formGroup{
+        font-size: 1.2em;
+      }
+  
+    }
+
     @media screen and (min-width: 576px){
       h1 {
-        font-size: 5em;
-        
+        font-size: 4em;
       }
+
       nav ul {
+        font-size: 1.9em;
+      }
+      
+      table {
         font-size: 2em;
       }
-    
-      
+
+      .icone {
+        height: 25px;
+      }
+
+      .formGroup{
+        font-size: 1.7em;
+        vertical-align : top;
+      }
+
     }
+
     @media screen and (min-width: 768px){
       h1 {
-        font-size: 6em;
+        font-size: 5em;
       }
+
+      h3, h4{
+        font-size: 2.5em;
+      }
+
       nav ul {
         font-size: 2.5em;
+      }
+
+      table {
+        font-size: 2.5em;
+      }
+
+      .icone {
+      height: 30px;
+      }
+
+      p {
+        font-size: 2em;
+      }
+
+      .formGroup{
+        font-size: 2em;
       }
     }
     @media screen and (min-width: 992px){
       h1 {
-        font-size: 8em;
+        font-size: 6em;
       }
       nav ul {
+        font-size: 2em;
+      }
+      table {
         font-size: 3em;
       }
+      .icone {
+        height: 35px;
+        }
     }
     @media screen and (min-width: 1200px){
       h1 {
-        font-size: 10em;
+        font-size: 8em;
       }
       nav ul {
+        font-size: 2.5em;
+      }
+      table {
         font-size: 3.5em;
+    }
+      .icone {
+      height: 40px;
+      }
+      .formGroup{
+        font-size: 2.5em;
       }
     }
+
+
     /* utility classes */
-    
-    .logo {
-      max-width: 33%;
+      .logo {
+      width: 12vw;
       height: auto;
-    }
-    
-    .photo {
-      width: 50vh;
+      }
+      
+      .photo {
+      width: 30vh;
       height: auto;
-      border : #0D3B66 1px solid;
       border-radius: 5px;
       margin: 5px;
-    }
+      }
     /* specific classes */
     .formGroup{
       margin : 15px;
     }
-    .photoCentrale {
-      width: 100%;
-    }
-    table /* Toutes les cellules des tableaux... */
-    {
-        border: 1px solid #0D3B66;
-        border-collapse: collapse;
-        margin: 0;
-        padding: 0;
-        height: 50vh;
-        width: 50vw;
-    }
-    caption{
-      font-size: 2em;
-    }
 
-  th{
-  font-size: 1em;
-  }
-    td {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        font-size: 1em;
-      }
     iframe {
       display: block;       
       height: 26vh;        
