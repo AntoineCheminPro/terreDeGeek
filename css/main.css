@@ -73,9 +73,11 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
+    /* put a font on the site */
      * {
       font-family: 'Yanone Kaffeesatz', sans-serif;
     }
+
 
     .mainBG {
       background-color:  #0D3B66;
@@ -157,7 +159,13 @@
       color: white;
       margin-right: 5px;
     }
+    
+    p {
+      font-size: 1.5em;
+    }
 
+
+    /* Add a effect when hover an a on the top / exclude footer nav a */
     body>nav a:hover {
       background-color: #FAA916;
       color: #0D3B66;
@@ -167,10 +175,7 @@
       transition: 0.5s;
     }
     
-    p {
-      font-size: 1.5em;
-    }
-
+    /* table and table elements */
     table {
       border: 1px solid #0D3B66;
       border-collapse: collapse;
@@ -181,11 +186,11 @@
       font-size: 1em;
     }
 
-    caption{
+    caption {
       font-size: 2em;
     }
 
-    th{
+    th {
     font-size: 1em;
     }
 
@@ -201,6 +206,7 @@
       font-size: 1em;
     }
 
+    /* put some size to nav for smallest phones */
     nav ul {
       margin: 0;
       padding: 0;
@@ -246,129 +252,139 @@
       font-size: 1em;
     } 
 
-    .verticalalign{
+    .verticalalign {
       vertical-align: top;
     }
-    @media screen and (min-width: 376px){
-      nav ul {
-        font-size: 1.2em;
-      }
-      .formGroup{
-        font-size: 1.2em;
-      }
-  
+
+    iframe {
+      height: 20vw;        
+      width: 36vw;
+      border-radius: 2vh;
     }
-
-    @media screen and (min-width: 576px){
-      h1 {
-        font-size: 4em;
-      }
-
-      nav ul {
-        font-size: 1.9em;
-      }
-      
-      table {
-        font-size: 2em;
-      }
-
-      .icone {
-        height: 25px;
-      }
-
-      .formGroup{
-        font-size: 1.7em;
-        vertical-align : top;
-      }
-
-    }
-
-    @media screen and (min-width: 768px){
-      h1 {
-        font-size: 5em;
-      }
-
-      h3, h4{
-        font-size: 2.5em;
-      }
-
-      nav ul {
-        font-size: 2.5em;
-      }
-
-      table {
-        font-size: 2.5em;
-      }
-
-      .icone {
-      height: 30px;
-      }
-
-      p {
-        font-size: 2em;
-      }
-
-      .formGroup{
-        font-size: 2em;
-      }
-    }
-    @media screen and (min-width: 992px){
-      h1 {
-        font-size: 6em;
-      }
-      nav ul {
-        font-size: 2em;
-      }
-      table {
-        font-size: 3em;
-      }
-      .icone {
-        height: 35px;
-        }
-    }
-    @media screen and (min-width: 1200px){
-      h1 {
-        font-size: 8em;
-      }
-      nav ul {
-        font-size: 2.5em;
-      }
-      table {
-        font-size: 3.5em;
-    }
-      .icone {
-      height: 40px;
-      }
-      .formGroup{
-        font-size: 2.5em;
-      }
-    }
-
-
-    /* utility classes */
-      .logo {
+    .logo {
       width: 12vw;
       height: auto;
       }
-      
-      .photo {
-      width: 30vh;
+        
+    .photo {
+      width: 25vw;
       height: auto;
       border-radius: 5px;
       margin: 5px;
       }
-    /* specific classes */
+
     .formGroup{
       margin : 15px;
-    }
+      }
+    
 
-    iframe {
-      display: block;       
-      height: 26vh;        
-      width: 30vh;
-      border: black solid 2px;
-      border-radius: 2vh;
+/* utility classes */
+   
+/* give an biggest size for phones largest than iphone 5 */
+@media screen and (min-width: 376px){
+  nav ul {
+    font-size: 1.2em;
+  }
+
+  .formGroup{
+    font-size: 1.2em;
+  }
+
+}
+
+/* adjust font sizes to medium phones */
+@media screen and (min-width: 576px){
+  h1 {
+    font-size: 4em;
+  }
+
+  nav ul {
+    font-size: 1.9em;
+  }
+  
+  table {
+    font-size: 2em;
+  }
+
+  .icone {
+    height: 25px;
+  }
+
+  .formGroup{
+    font-size: 1.7em;
+    vertical-align : top;
+  }
+
+}
+
+/* adjust font size to largest phones */
+@media screen and (min-width: 768px){
+  h1 {
+    font-size: 5em;
+  }
+
+  h3, h4{
+    font-size: 2.5em;
+  }
+
+  nav ul {
+    font-size: 2.5em;
+  }
+
+  table {
+    font-size: 2.5em;
+  }
+
+  .icone {
+  height: 30px;
+  }
+
+  p {
+    font-size: 2em;
+  }
+
+  .formGroup{
+    font-size: 2em;
+  }
+}
+
+/* adjust font size for tablet */
+@media screen and (min-width: 992px){
+  h1 {
+    font-size: 6em;
+  }
+  nav ul {
+    font-size: 2em;
+  }
+  table {
+    font-size: 3em;
+  }
+  .icone {
+    height: 35px;
     }
+}
+
+/* comuter sizes */
+@media screen and (min-width: 1200px){
+  h1 {
+    font-size: 8em;
+  }
+  nav ul {
+    font-size: 2.5em;
+  }
+  table {
+    font-size: 3.5em;
+}
+  .icone {
+  height: 40px;
+  }
+  .formGroup{
+    font-size: 2.5em;
+  }
+}
+
+    /* specific classes */
+   
   /* ==========================================================================
      Helper classes
      ========================================================================== */
