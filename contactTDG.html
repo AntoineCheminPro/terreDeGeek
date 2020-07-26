@@ -59,39 +59,39 @@
       <form action="#" method="POST">
 
 <!-- ask name -->
-         <div class="formGroup">
-             <label for="name">Nom :</label>
-             <input type="text" name="name" id="name" placeholder="votre nom" maxlength="40" minlength="2" required>
+         <div>
+             <label class="formGroup" for="name">Nom :</label>
+             <input class="formGroup" type="text" name="name" id="name" placeholder="votre nom" maxlength="40" minlength="2" required>
          </div>
 
 <!-- ask surname -->
-         <div class="formGroup">
-             <label for="surname">Prénom :</label>
-             <input type="text" name="surname" id="surname" placeholder="votre prénom" maxlength="40" minlength="2" required>
+         <div>
+             <label class="formGroup" for="surname">Prénom :</label>
+             <input class="formGroup" type="text" name="surname" id="surname" placeholder="votre prénom" maxlength="40" minlength="2" required>
          </div>
 
 <!-- ask age -->
-         <div class="formGroup">
-             <label for="age">Age :</label>
-             <input type="number" name="age" id="age" placeholder="age" max="115" min="18" required>
-         </div>
+         <div>
+             <label class="formGroup" for="age">Age :</label>
+             <input class="formGroup" type="number" name="age" id="age" placeholder="age" max="115" min="18" required>
+         </div> 
 
 <!-- ask phone number -->
-         <div class="formGroup">
-             <label for="phone">Telephone :</label>
-             <input type="tel" name="phone" id="phone" placeholder="06-00-00-00-00" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" size="12">
+         <div >
+             <label class="formGroup" for="phone">Telephone :</label>
+             <input class="formGroup" type="tel" name="phone" id="phone" placeholder="06-00-00-00-00" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" size="12">
          </div>
 
 <!-- ask email -->
-         <div class="formGroup">
-            <label for="email">Mail :</label>
-            <input type="email" name="email" id="email" placeholder="martin.dupont@gmail.fr"  required>
+         <div >
+            <label class="formGroup" for="email">Mail :</label>
+            <input class="formGroup" type="email" name="email" id="email" placeholder="martin.dupont@gmail.fr"  required>
         </div>
 
 <!-- ask contact object -->
-         <div class="formGroup">
-            <label for="contactObjet">Objet du contact :</label>
-            <select name="contactObjet" id="contactObjet">
+         <div >
+            <label class="formGroup" for="contactObjet">Objet du contact :</label>
+            <select class="formGroup" name="contactObjet" id="contactObjet">
             <option value="information">information</option>
             <option value="réclamation">réclamation</option>
             <option value="partenariat">partenariat</option>
@@ -101,7 +101,7 @@
 
 <!-- ask message -->
          <div class="formGroup ">
-             <label for="Message">Message :</label>
+             <label class="formGroup" for="Message">Message :</label>
          <br>
              <textarea name="Message" id="Message" placeholder="Message" rows="5" cols="33">
              </textarea>
